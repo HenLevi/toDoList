@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>To Do List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="css/font-awesome.css"> 
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/list.js" type="text/javascript"></script>
+    </head>
+
+    <body class=" container ">
+        <h1 style="color:#265a88;text-align: center; "><u>To Do List</u></h1>
+        <div class="row ">
+            <div class="col-xs-12 col-lg-10 " >
+                <input id="nameList" type="text" class="form-control" name="list" placeholder="Enter Task"  onkeydown="onEnter(event.keyCode);">       
+            </div>
+            <div class="col-xs-12 col-lg-2" align="left">
+                <button type="button" class="btn btn-primary btn-md" onclick="addTask();">ADD</button>
+            </div>
+            <br>
+        </div> 
+        <br>
+        <br>
+        <div class="list-group"></div>  
+
+    </body>
+</html>
